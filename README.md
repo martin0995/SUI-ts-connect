@@ -1,46 +1,47 @@
-# Getting Started with Create React App
+# Wormhole Connect: Sui to Fuji (EVM) Bridge Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This repository demonstrates the integration of Wormhole Connect in a React app for bridging tokens between the Sui and Fuji (Avalanche Testnet) networks. Using the `@wormhole-foundation/wormhole-connect` package, developers can easily embed a user interface for cross-chain token transfers with minimal configuration.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+ - **Cross-Chain Bridge** - enables token transfers between Sui and Fuji (Avalanche Testnet)
+ - **Customizable UI** - displays a demo interface for token bridging with customizable UI options
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ - [Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed on your system
+ - TypeScript installed globally: `npm install -g typescript`
+ - A funded wallet with [Testnet tokens](https://faucets.chain.link/) for deployment and transfers
 
-### `npm test`
+## Installation and Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+```bash
+git clone https://github.com/martin0995/SUI-ts-connect.git
+cd SUI-ts-connect
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install the dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start the application:
 
-### `npm run eject`
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The app should now be running on http://localhost:3000.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Code Overview
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The main application logic is in `App.tsx`, configuring and rendering the `WormholeConnect` component. This component is imported from `@wormhole-foundation/wormhole-connect` and initialized with a basic configuration for the Testnet network, connecting Sui and Avalanche.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Resources
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+For more information on configuring Wormhole Connect, refer to the [Wormhole Documentation](https://wormhole.com/docs/build/applications/connect/configuration/), which provides detailed guidance on advanced configurations and supported features.
